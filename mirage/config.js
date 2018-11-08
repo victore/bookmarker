@@ -24,11 +24,15 @@ export default function() {
     http://www.ember-cli-mirage.com/docs/v0.3.x/shorthands/
   */
 
+ this.passthrough();
+
   this.get('/users');
   this.post('/users');
   this.get('/users/:id');
   this.put('/users/:id'); // or this.patch
   this.patch('/users/:id');
   this.del('/users/:id');
+
+  this.get('/bookmarks');
 
 }
