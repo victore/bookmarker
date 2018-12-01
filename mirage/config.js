@@ -34,5 +34,10 @@ export default function() {
   this.del('/users/:id');
 
   this.get('/bookmarks');
+  this.post('/bookmarks');
+  this.get('/bookmarks/:id');
+  this.put('/bookmarks/:id'); // or this.patch
+  this.patch('/bookmarks/:id');
+  this.del('/bookmarks/:id');
 
 }

@@ -1,6 +1,7 @@
 <article id={{bookmark.id}}>
-  <a target="_blank" rel="noopener" href={{bookmark.link}}>
-    {{bookmark-title bookmark.title bookmark.about}}
+  <a target="_blank" rel="noopener" href={{bookmark.url}}>
+    {{!-- {{bookmark-name bookmark.hacker bookmark.verb}} --}}
+    {{bookmark.hacker }} - {{bookmark.verb }}
   </a>
 </article>
 {{yield}}
