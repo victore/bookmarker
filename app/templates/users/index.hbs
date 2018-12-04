@@ -7,7 +7,7 @@
     <p>No Bookmarks for User</p>
   {{/each}} --}}
 
-  {{#users-list avatarUrl = user.avatar email=user.email}}
+  {{#users-list user.avatar user.email}}
     {{user.fullName}}
   {{/users-list}}
   {{/each}}

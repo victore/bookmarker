@@ -1,6 +1,6 @@
 import Route from '@ember/routing/route';
 
-let bookmars = [{
+let bookmarks = [{
   id: 1,
   title: 'Linux',
   link: 'https:www.microsoft.com',
@@ -15,7 +15,7 @@ let bookmars = [{
 
 export default Route.extend({
   model() {
-    //return bookmars;
+    //return bookmarks;
     return this.get('store').findAll('bookmark');
   }
 });
