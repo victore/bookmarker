@@ -6,6 +6,6 @@ export default Factory.extend({
   firstName() { return faker.name.firstName();},
   lastName() { return faker.name.lastName();},
   avatar() { return faker.internet.avatar();},
-  isAdmin() { return faker.random.boolean(0,1);},
+  isAdmin() { return faker.random.boolean;},
   created() { return faker.date.past();}
 });
