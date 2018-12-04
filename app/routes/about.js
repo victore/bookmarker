@@ -15,6 +15,7 @@ let bookmars = [{
 
 export default Route.extend({
   model() {
-    return bookmars;
+    //return bookmars;
+    return this.get('store').findAll('bookmark');
   }
 });

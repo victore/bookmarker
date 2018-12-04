@@ -1,2 +1,14 @@
-<h3>All the Users!</h3>
+<h3>All the Usersss!</h3>
+<p>{{testProperty}}</p>
+{{#each model as |user index|}}
+  {{!-- <p>#{{index}} - {{user.fullName}}</p>
+  {{#each user.bookmarks as |bookmark|}}
+  {{else}}
+    <p>No Bookmarks for User</p>
+  {{/each}} --}}
+
+  {{#users-list avatarUrl = user.avatar email=user.email}}
+    {{user.fullName}}
+  {{/users-list}}
+  {{/each}}
 {{outlet}}
